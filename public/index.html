@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+  <body class="dark-bg-colour">
+    <!-- Navigation Bar -->
+    <!-- <nav class="bg-black text-white p-4">
+
+      <section class="w-full">
+        <div class="m-auto float-left">
+          <div class="w-full">
+            <image class="w-10" src="./assets/images/Logo2022.png" />
+          </div>
+          <a href="./index.html" class="text-2xl">Cameron Tebbenham-Small</a>
+        </div>
+        <div class="text-center">
+          <a href="./pages/about-me.html" class="text-xl pr-4">About Me</a>
+          <a href="./pages/cv.html" class="text-xl pl-4">CV</a>
+        </div>
+      </section>
+    </nav> -->
+
+    <!-- Header if it's necessary -->
+    <section class="fixed z-50 w-full">
+      <div class="max-w-screen-lg mx-auto nav-container">
+        <a href="./index.html"
+          ><image class="w-20 m-auto logo" src="./assets/images/Logo2022.png"
+        /></a>
+        <!-- mobile nav toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul class="m-0 p-0 list-none">
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </div>
+    </section>
+
+    <header class="w-full pt-72 px-6">
+      <section class="headings-container max-w-screen-lg mx-auto">
+        <h3 class="text-white text-2xl row-start-1 col-start-2 col-end-3">
+          Hello,
+        </h3>
+        <h1 class="text-white text-4xl row-start-2 col-start-2 col-end-3">
+          I'm Cameron Tebbenham-Small,
+        </h1>
+        <h2
+          class="text-white text-2xl row-start-3 col-start-2 col-end-3 relative"
+        >
+          UX/UI and Front-end web designer living in Bristol, UK.
+        </h2>
+      </section>
+    </header>
+
+    <main class="w-full pt-32">
+      <section id="work" class="py-64">
+        <article class="max-w-screen-lg m-auto">
+          <div
+            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pr-1 lg:border-r-4 border-stone-50"
+          >
+            <a href="./pages/project-1.html" class="hidden lg:block"
+              ><image
+                src="./assets/images/p1-prototype2.png"
+                class="w-full h-full m-auto"
+              ></image
+            ></a>
+            <div class="text-white p-6 m-auto">
+              <h2 class="text-2xl">Simply Sleep Mobile App Prototype</h2>
+              <h3 class="text-xl">Role: UX/UI Designer</h3>
+              <br />
+              <p>
+                Using Figma to design a hi-fi prototype for a healthy sleeping
+                app aimed at students.
+              </p>
+              <br />
+              <a class="underline text-lg" href="./pages/project-1.html"
+                >Read More...</a
+              >
+            </div>
+          </div>
+        </article>
+        <article class="max-w-screen-lg m-auto py-20">
+          <div
+            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pl-1 lg:border-l-4 border-stone-50"
+          >
+            <div class="text-white p-6 m-auto text-right">
+              <h2 class="text-2xl">Frome Valley Digital Trails</h2>
+              <h3 class="text-xl">Role: Front-end Developer</h3>
+              <br />
+              <p>
+                Developing a digital trails webapp containing routes,
+                information and a quiz using localstorage to store data.
+              </p>
+              <br />
+              <a class="underline text-lg" href="./pages/project-2.html"
+                >Read More...</a
+              >
+            </div>
+            <a href="./pages/project-2.html" class="hidden lg:block"
+              ><image
+                src="./assets/images/p2-introimage.png"
+                class="w-full h-full m-auto"
+              ></image
+            ></a>
+          </div>
+        </article>
+        <article class="max-w-screen-lg m-auto pb-20">
+          <div
+            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pr-1 lg:border-r-4 border-stone-50"
+          >
+            <a href="./pages/project-1.html" class="hidden lg:block relative"
+              ><image
+                src="./assets/images/p1-prototype2.png"
+                class="w-full"
+              ></image>
+              <p
+                class="4xl text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              >
+                In Progress
+              </p></a
+            >
+
+            <div class="text-white p-6 m-auto">
+              <h2 class="text-2xl">Virtual Museum Webapp</h2>
+              <h3 class="text-xl">
+                Role: UX/UI Designer and Front-end Developer
+              </h3>
+              <br />
+              <p>
+                Exploring how a virtual museum could be designed and developed
+                using React and Three JS.
+              </p>
+              <br />
+              <a class="underline text-lg" href="./pages/project-3.html"
+                >Read More...</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section
+        id="about-me"
+        class="max-w-screen-lg mx-auto lg:grid lg:grid-cols-12 p-6"
+      >
+        <!-- <h3 class="text-white text-2xl row-start-1 col-start-2 col-end-3">
+          About Me:
+        </h3> -->
+        <article class="row-start-1 lg:col-start-1 lg:col-end-9">
+          <h1
+            class="text-white text-4xl row-start-1 lg:col-start-2 lg:col-end-3"
+          >
+            About Me:
+          </h1>
+          <h2
+            class="text-white text-2xl row-start-2 lg:col-start-2 lg:col-end-3 relative h2-underline"
+          >
+            UX/UI and Front-end web designer living in Bristol, UK.
+          </h2>
+          <p class="row-start-3 lg:col-start-1 lg:col-end-3 py-20 text-white">
+            With a background in philosophy and literature and a love for
+            technology, I am a creative and critical thinker who enjoys building
+            interactive, informative and emotive digital experiences to improve
+            the lives of others. I am confident researching and writing for
+            projects while persevering through problems by learning new
+            techniques and solutions.
+            <br /><br />
+            I am currently specialising in UX and web Front-End design and
+            development. I am experienced in creating websites using libraries
+            and frameworks such as React JS, Bootstrap and Tailwind. Further, I
+            have developed creative JavaScript based applications using tools
+            such as Three JS and P5.js. I have experience in all aspects of the
+            User Experience pipeline from ideation and user research to
+            prototyping solutions.
+          </p>
+        </article>
+        <!-- <h1 class="text-white text-4xl row-start-1 col-start-2 col-end-3">
+          About Me:
+        </h1>
+        <h2
+          class="text-white text-2xl row-start-2 col-start-2 col-end-3 relative"
+        >
+          UX/UI and Front-end web designer living in Bristol, UK.
+        </h2>
+        <p class="row-start-3 col-start-1 col-end-3 pt-20 text-white">
+          With a background in philosophy and literature and a love for
+          technology, I am a creative and critical thinker who enjoys building
+          interactive, informative and emotive digital experiences to improve
+          the lives of others. I am confident researching and writing for
+          projects while persevering through problems by learning new techniques
+          and solutions.
+        </p> -->
+
+        <image
+          src="./assets/images/me.jpg"
+          class="row-start-1 lg:col-start-10 lg:col-end-13 lg:py-10"
+        />
+      </section>
+    </main>
+
+    <!-- Projects -->
+    <!-- <main class="w-full bg-black pt-72">
+      <article class="max-w-screen-lg m-auto">
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+          <section class="relative text-center m-4">
+            <a href="./pages/project-1.html"
+              ><image
+                src="./assets/images/p1-prototype2.png"
+                class="w-full"
+              ></image
+            ></a>
+            <p
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              Project 1
+            </p>
+          </section>
+          <section class="relative text-center m-4">
+            <a href="./pages/project-2.html"
+              ><image
+                src="https://via.placeholder.com/300"
+                class="w-full"
+              ></image
+            ></a>
+            <p
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              Project 2
+            </p>
+          </section>
+          <section class="relative text-center m-4">
+            <a href="./pages/project-3.html"
+              ><image
+                src="https://via.placeholder.com/300"
+                class="w-full"
+              ></image
+            ></a>
+            <p
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              Project 3
+            </p>
+          </section>
+        </div>
+      </article>
+    </main> -->
+
+    <footer class="w-full dark-bg-colour text-white text-center py-4 pt-32">
+      <section class="max-w-screen-lg mx-auto">
+        <p id="copyright-notice"></p>
+      </section>
+    </footer>
+  </body>
+
+  <script type="text/javascript">
+    var date = new Date();
+    var copyright = document.getElementById("copyright-notice");
+    copyright.textContent += "Copyright CamTebSmall " + date.getFullYear();
+  </script>
+</html>

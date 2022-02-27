@@ -1,0 +1,205 @@
+:root {
+  --light-background: #ebebeb;
+  --dark-background: #272932;
+  --teal-accent: #32aaac;
+  --orange-accent: #f05d5e;
+}
+
+.dark-bg-colour {
+  background-color: var(--dark-background);
+}
+.dark-text-colour {
+  background-color: var(--dark-background);
+}
+.light-bg-colour {
+  background-color: var(--light-background);
+}
+.light-text-colour {
+  background-color: var(--light-background);
+}
+.teal-accent-bg {
+  background-color: var(--teal-accent);
+}
+.teal-accent-text {
+  background-color: var(--teal-accent);
+}
+.orange-accent-bg {
+  background-color: var(--orange-accent);
+}
+.orange-accent-text {
+  background-color: var(--orange-accent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom navigation bar styling */
+nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: black;
+  width: 100%;
+  /* display: none; */
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+nav li {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+nav a,
+nav p {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  color: var(--teal-accent);
+}
+nav a:hover {
+  color: grey;
+}
+
+/* The ~ checks for any preceeding sibling - basically, if there is a nav right after the nav-toggle and nav-toggle is checked, display nav as a block */
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  display: block;
+  transform: scale(1, 1);
+}
+.nav-toggle:checked ~ nav a,
+.nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-toggle-label:hover {
+  cursor: pointer;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 2rem;
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+}
+.nav-toggle-label span::before {
+  bottom: 0.5rem;
+}
+.nav-toggle-label span::after {
+  top: 0.5rem;
+}
+
+.header-heading {
+  grid-row: 2;
+  grid-column: 3/4;
+}
+.headings-container h2::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: rgb(226, 101, 42);
+  position: absolute;
+  top: 1;
+  left: 0;
+  right: 0;
+}
+
+.h2-underline::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: rgb(226, 101, 42);
+  position: absolute;
+  top: 1;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav-toggle-label {
+    display: none;
+  }
+
+  .nav-container {
+    display: grid;
+    /* grid with 4 columns */
+    grid-template-columns: 1fr auto minmax(200px, 3fr) 1fr;
+    grid-template-rows: auto;
+    background-color: var(--dark-background);
+  }
+
+  .logo {
+    grid-column: 1 / 2;
+  }
+
+  nav {
+    /* all: unset; removes styling off the nav */
+    all: unset;
+    grid-column: 4/5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin-left: 3rem;
+    margin-bottom: 0;
+  }
+
+  nav a,
+  nav p {
+    opacity: 1;
+    position: relative;
+  }
+
+  nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: rgb(226, 101, 42);
+    position: absolute;
+    top: -0.5rem;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+
+    transition: transform ease-in-out 200ms;
+  }
+
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+
+  .headings-container {
+    display: grid;
+    /* grid with 4 columns */
+    grid-template-columns: 1fr auto 300px 1fr;
+    grid-template-rows: auto;
+  }
+}
