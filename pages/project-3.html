@@ -4,17 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CamTebSmall</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/Logo2022.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
   </head>
   <body>
-    <h1>Virtual Museum Webapp - in progress</h1>
-    <h3>UX/UI and Front-End Web Developer</h3>
-    <h3>October 2021 - May 2022</h3>
+    <section class="fixed z-50 w-full">
+      <div class="max-w-screen-lg mx-auto nav-container">
+        <a href="../index.html"
+          ><image class="w-20 m-auto logo" src="../assets/images/Logo2022.png"
+        /></a>
+        <!-- mobile nav toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul class="m-0 p-0 list-none">
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+            </li>
+            <li>
+              <a href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </div>
+    </section>
+    <header class="w-full pt-72 px-6">
+      <section
+        id="about-me"
+        class="max-w-screen-lg mx-auto lg:grid lg:grid-cols-12 lg:grid-rows-4 p-6"
+      >
+        <!-- <h3 class="text-white text-2xl row-start-1 col-start-2 col-end-3">
+          About Me:
+        </h3> -->
+        <article
+          class="row-start-1 row-end-4 lg:col-start-1 lg:col-end-12 lg:grid lg:grid-cols-12"
+        >
+          <h3
+            class="text-white text-2xl row-start-1 lg:col-start-1 lg:col-end-12"
+          >
+            October 2021 - May 2022
+          </h3>
+          <h1
+            class="text-white text-4xl row-start-2 lg:col-start-1 lg:col-end-12"
+          >
+            Virtual Museum Webapp - in progress,
+          </h1>
+          <h2
+            class="text-white text-2xl row-start-3 lg:col-start-1 lg:col-end-5 relative h2-underline"
+          >
+            UX/UI and Front-End Web Developer
+          </h2>
 
-    <image
-      src="../assets/images/p2-introimage.png"
-      alt="Frome Valley Digital Trails landing page"
-    />
+          <section
+            class="row-start-4 lg:col-start-1 lg:col-end-8 pt-10 text-white"
+          >
+            <h2 class="text-xl relative h2-underline-teal">Overview</h2>
+            <p class="py-4">
+              During 2021 I was tasked with identifying one key health issue for
+              a population group, conducting user research and designing a
+              mobile application prototype.
+              <br />
+              Initial ideation and brainstorming was performed in a group before
+              splitting to develop a series of individual prototypes.
+            </p>
+          </section>
+        </article>
+        <image
+          src="../assets/images/p3-proposal.png"
+          alt="Frome Valley Digital Trails landing page"
+          class="row-start-1 row-end-5 col-start-9 col-end-13 max-h-96 m-auto"
+        />
+      </section>
+    </header>
 
     <h2>Overview</h2>
     <p>
@@ -100,5 +168,34 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
+
+    <!-- Footer -->
+    <footer class="w-full dark-bg-colour text-white text-center py-4 pt-32">
+      <section class="max-w-screen-lg mx-auto grid md:grid-cols-3">
+        <section
+          class="teal-accent-text md:col-start-3 md:row-start-1 grid grid-cols-3 items-center py-2"
+        >
+          <a href="#"
+            ><i class="fa-brands fa-twitter col-start-1 text-2xl"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-github col-start-2 text-2xl"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-linkedin col-start-3 text-2xl"></i
+          ></a>
+        </section>
+        <p class="teal-accent-text py-2 md:col-start-1 md:row-start-1">
+          cameron.tebbenham@outlook.com
+        </p>
+        <!-- <a href="mailto:cameron.tebbenham@outlook.com"
+          >cameron.tebbenham@outlook.com</a
+        > -->
+        <p
+          class="orange-accent-text py-2 md:col-start-2 md:row-start-1"
+          id="copyright-notice"
+        ></p>
+      </section>
+    </footer>
   </body>
 </html>

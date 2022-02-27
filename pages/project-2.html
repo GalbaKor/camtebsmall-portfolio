@@ -4,104 +4,264 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CamTebSmall</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/Logo2022.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/custom.css" />
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
-    <h1>Frome Digital Trails - in progress</h1>
-    <h3>Front-End Web Developer</h3>
-    <h3>October 2021 - April 2022</h3>
+    <!-- Navigation -->
+    <section class="fixed z-50 w-full">
+      <div class="max-w-screen-lg mx-auto nav-container">
+        <a href="../index.html"
+          ><image class="w-20 m-auto logo" src="../assets/images/Logo2022.png"
+        /></a>
+        <!-- mobile nav toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+          <ul class="m-0 p-0 list-none">
+            <li>
+              <a href="../index.html#work">Work</a>
+            </li>
+            <li>
+              <a href="../index.html#about-me">About</a>
+            </li>
+            <li>
+              <a href="../index.html#contact-me">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </div>
+    </section>
 
-    <image
-      src="../assets/images/p2-introimage.png"
-      alt="Frome Valley Digital Trails landing page"
-    />
+    <!-- Header -->
+    <header class="w-full pt-72 px-6">
+      <section
+        class="max-w-screen-md mx-auto md:grid md:grid-cols-12 md:grid-rows-3 p-6"
+      >
+        <!-- <h3 class="text-white text-2xl row-start-1 col-start-2 col-end-3">
+          About Me:
+        </h3> -->
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-12 md:grid md:grid-cols-12"
+        >
+          <h3
+            class="text-white text-2xl row-start-1 md:col-start-1 md:col-end-10"
+          >
+            October 2021 - April 2022
+          </h3>
+          <h1
+            class="text-white text-4xl row-start-2 md:col-start-1 md:col-end-10"
+          >
+            Frome Digital Trails - in progress,
+          </h1>
+          <h2
+            class="text-white text-2xl row-start-3 md:col-start-1 md:col-end-10 relative h2-underline"
+          >
+            Front-End Web Developer
+          </h2>
 
-    <h2>Overview</h2>
-    <p>
-      Working under the
-      <a href="https://designenterprisestudio.com/">Design Enterprise Studio</a>
-      alongside a coursemate (<a href="ksenyashnurova.com">Ksenya Shnurova</a>),
-      we were tasked with creating a digital trails webapp for the Winterbourne
-      and Frome Valley Environmental Group.
-      <br />
-      This webapp would host a pilot walking route and contain text, video and
-      audio information about specific points along each route - accessed when
-      users scan a physical QR code at said points.
-      <br />
-      The project necessitated developing our project brief, greenlighting it
-      with the client and iterating on design ideas. As the client was open to
-      any ideas we had, We were reliant on each other to critically test and
-      challenge our own ideas to achieve the best results. This resulted in an
-      agile development cycle with sprints to develop each feature.
-    </p>
+          <section
+            class="row-start-4 md:col-start-1 md:col-end-8 pt-10 text-white"
+          >
+            <h2 class="text-xl relative h2-underline-teal">Overview</h2>
+            <p class="py-4">
+              Working under the
+              <a href="https://designenterprisestudio.com/"
+                >Design Enterprise Studio</a
+              >
+              alongside a coursemate (<a
+                href="ksenyashnurova.com"
+                class="teal-accent-text"
+                >Ksenya Shnurova</a
+              >), we were tasked with creating a digital trails webapp for the
+              Winterbourne and Frome Valley Environmental Group. <br /><br />
+              This webapp would host a pilot walking route and contain text,
+              video and audio information about specific points along each route
+              - accessed when users scan a physical QR code at said points.
+              <br /><br />
+              The project necessitated developing our project brief,
+              greenlighting it with the client and iterating on design ideas. As
+              the client was open to any ideas we had, We were reliant on each
+              other to critically test and challenge our own ideas to achieve
+              the best results. This resulted in an agile development cycle with
+              sprints to develop each feature.
+            </p>
+          </section>
+          <div
+            class="row-start-4 md:col-start-9 md:col-end-13 text-white pt-10"
+          >
+            <h2 class="text-xl relative h2-underline-teal">Process</h2>
+            <ul class="py-4">
+              <li>Ideation</li>
+              <li>Coding and Technical Research</li>
+            </ul>
+            <h2 class="text-xl relative h2-underline-teal">Tools</h2>
+            <ul class="py-4">
+              <li>HTML, CSS, JS</li>
+              <li>Tailwind CSS</li>
+              <li>Alpine JS</li>
+              <li>Github (version control)</li>
+            </ul>
+          </div>
+        </article>
+        <image
+          src="../assets/images/p2-introimage.png"
+          alt="Frome Valley Digital Trails landing page"
+          class="row-start-4 col-start-1 col-end-7 max-h-96 m-auto py-4"
+        />
+        <image
+          src="../assets/images/p2-phoneview.png"
+          alt="Frome Valley Digital Trails landing page"
+          class="row-start-3 row-end-5 col-start-7 col-end-13 max-h-96 m-auto py-4"
+        />
+      </section>
+    </header>
 
-    <h2>Tools</h2>
-    Ksenya:
-    <ul>
-      <li>Figma - Ksenya</li>
-    </ul>
-    Cameron:
-    <ul>
-      <li>HTML, CSS, JS</li>
-      <li>Tailwind CSS</li>
-      <li>Alpine JS</li>
-      <li>Github (version control)</li>
-    </ul>
-
-    <h2>Process</h2>
-    <ul>
-      <li>Ideation</li>
-      <li>Coding and Technical Research</li>
-    </ul>
-
-    <h2>Ideation</h2>
-    <p>
-      During the ideation stage, we considered; the form the final product
-      should take - a dedicated application or webapp, the target audience, the
-      amount of information to be displayed and the visual theme of the project.
-      <br />
-      Additionally, we were presented with a design requirement that the project
-      be developed such that the Frome Valley team could create new routes in
-      the future.
-      <br />
-      Thus the initial stages consisted of gathering information from the client
-      themselves and refining their idea into a consolidated design brief
-      outlining the must haves and should haves for the webapp.
-    </p>
-    <iframe
-      src="../assets/pdfs/Frome Valley Digital Trails Brief.pdf#toolbar=0"
-      frameborder="0"
-      width="100%"
-      height="400px"
-    ></iframe>
-
-    <h2>Coding and Technical Research</h2>
-    <p>
-      Working as a front-end developer for this project required me to stretch
-      my boundaries and learn a lot of new techniques in a short amount of
-      time.<br />
-      Since the client's existing website used Tailwind CSS, I took it upon
-      myself to do the same and learn how to use Tailwind.<br />
-      I was successful in my application of this framework and have even started
-      using it in other projects. <br /><br />
-      Perhaps the most challenging element was establishing how I would develop
-      what the client described as a "collectable" feature - the idea that as a
-      user walks through a route, they can get something back by using the QR
-      codes. <br />
-      During ideation, I proposed the idea of a quiz that could reward users
-      with a sticker. This would normally require the construction of a back-end
-      system to verify and validate users, but I shifted direction and instead
-      learnt how to use local storage. This bypasses the need for a login system
-      entirely and thus any potential ethical concerns that would arise from
-      tracking user data.
-    </p>
-    <image
-      src="../assets/images/p2-localstorage.png"
-      alt="The Y Shaped Tree,
+    <!-- Main Content -->
+    <main class="w-full px-6">
+      <!-- Ideation -->
+      <section
+        class="max-w-screen-lg mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
+        >
+          <section class="row-start-4 md:col-start-1 md:col-end-13 text-white">
+            <h2 class="text-xl relative h2-underline-teal">Ideation</h2>
+            <p class="py-4 md:pr-2">
+              During the ideation stage, we considered; the form the final
+              product should take - a dedicated application or webapp, the
+              target audience, the amount of information to be displayed and the
+              visual theme of the project.
+              <br /><br />
+              Additionally, we were presented with a design requirement that the
+              project be developed such that the Frome Valley team could create
+              new routes in the future.
+              <br /><br />
+              Thus the initial stages consisted of gathering information from
+              the client themselves and refining their idea into a consolidated
+              design brief outlining the must haves and should haves for the
+              webapp.
+            </p>
+          </section>
+        </article>
+        <!-- <iframe
+          src="../assets/pdfs/Frome Valley Digital Trails Brief.pdf#toolbar=0"
+          frameborder="0"
+          width="100%"
+          height="400px"
+          class="row-start-1 row-end-3 col-start-8 col-end-13 max-h-80 m-auto"
+        ></iframe> -->
+      </section>
+      <!-- Coding and Technical Research -->
+      <section
+        class="max-w-screen-lg mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
+        >
+          <section class="row-start-1 md:col-start-1 md:col-end-8 text-white">
+            <h2 class="text-xl relative h2-underline-teal">
+              Coding and Technical Research
+            </h2>
+            <p class="py-4 md:pr-2">
+              Working as a front-end developer for this project required me to
+              stretch my boundaries and learn a lot of new techniques in a short
+              amount of time.<br /><br />
+              Since the client's existing website used Tailwind CSS, I took it
+              upon myself to do the same and learn how to use Tailwind.<br />
+              I was successful in my application of this framework and have even
+              started using it in other projects. <br /><br />
+              Perhaps the most challenging element was establishing how I would
+              develop what the client described as a "collectable" feature - the
+              idea that as a user walks through a route, they can get something
+              back by using the QR codes. <br /><br />
+              During ideation, I proposed the idea of a quiz that could reward
+              users with a sticker. This would normally require the construction
+              of a back-end system to verify and validate users, but I shifted
+              direction and instead learnt how to use local storage. This
+              bypasses the need for a login system entirely and thus any
+              potential ethical concerns that would arise from tracking user
+              data.
+            </p>
+          </section>
+          <image
+            src="../assets/images/p2-popup.png"
+            alt="The Y Shaped Tree,
     before and after a sticker is granted to the user"
-    />
+            class="row-start-1 md:col-start-8 md:col-end-13 max-h-96 py-4 pl-2 m-auto"
+          />
+        </article>
+      </section>
 
-    <h2>Conclusion</h2>
-    <p></p>
+      </section>
+      <!-- Conclusion -->
+      <section
+        class="max-w-screen-md mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article class="row-start-1 row-end-4 md:col-start-1 md:col-end-13">
+          <section class="text-white">
+            <h2 class="text-xl relative h2-underline-teal">Conclusion</h2>
+            <p class="py-4 md:pr-2">
+              Working for a client for the first time has been an enlightening
+              experience. I was kept on my toes throughout the development
+              process, constantly seeking out solutions and methods for
+              implementing key features. <br /><br />
+              This was also my first time properly working alongside a UX designer, collaborating on feasibility and supporting each other throughout the design and development process.
+              <br /><br />
+              Overall I have deepened my enjoyment of developing for the web and learnt a great deal about the relationship between a UX/web developer and their clients.
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full dark-bg-colour text-white text-center py-4 pt-32">
+      <section class="max-w-screen-lg mx-auto grid md:grid-cols-3">
+        <section
+          class="teal-accent-text md:col-start-3 md:row-start-1 grid grid-cols-3 items-center py-2"
+        >
+          <a href="#"
+            ><i class="fa-brands fa-twitter col-start-1 text-2xl"></i
+          ></a>
+          <a href="https://github.com/GalbaKor"
+            ><i class="fa-brands fa-github col-start-2 text-2xl"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/cameron-tebbenham-small/"
+            ><i class="fa-brands fa-linkedin col-start-3 text-2xl"></i
+          ></a>
+        </section>
+        <p class="teal-accent-text py-2 md:col-start-1 md:row-start-1">
+          cameron.tebbenham@outlook.com
+        </p>
+        <!-- <a href="mailto:cameron.tebbenham@outlook.com"
+          >cameron.tebbenham@outlook.com</a
+        > -->
+        <p
+          class="orange-accent-text py-2 md:col-start-2 md:row-start-1"
+          id="copyright-notice"
+        ></p>
+      </section>
+    </footer>
   </body>
+
+  <!-- Copyright updating script -->
+  <script type="text/javascript">
+    var date = new Date();
+    var copyright = document.getElementById("copyright-notice");
+    copyright.textContent += "Copyright CamTebSmall " + date.getFullYear();
+  </script>
 </html>

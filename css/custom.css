@@ -2,9 +2,11 @@
   --light-background: #ebebeb;
   --dark-background: #272932;
   --teal-accent: #32aaac;
-  --orange-accent: #f05d5e;
+  --orange-accent: rgb(226, 101, 42);
 }
-
+body {
+  background: var(--dark-background);
+}
 .dark-bg-colour {
   background-color: var(--dark-background);
 }
@@ -21,13 +23,19 @@
   background-color: var(--teal-accent);
 }
 .teal-accent-text {
-  background-color: var(--teal-accent);
+  color: var(--teal-accent);
+}
+.teal-accent-border {
+  border-color: var(--teal-accent);
 }
 .orange-accent-bg {
   background-color: var(--orange-accent);
 }
 .orange-accent-text {
-  background-color: var(--orange-accent);
+  color: var(--orange-accent);
+}
+.orange-accent-border {
+  border-color: var(--orange-accent);
 }
 
 html {
@@ -40,7 +48,7 @@ nav {
   text-align: left;
   top: 100%;
   left: 0;
-  background: black;
+  background: var(--dark-background);
   width: 100%;
   /* display: none; */
   transform: scale(1, 0);
@@ -63,6 +71,9 @@ nav p {
 }
 nav a:hover {
   color: grey;
+}
+.nav-container {
+  background-color: var(--dark-background);
 }
 
 /* The ~ checks for any preceeding sibling - basically, if there is a nav right after the nav-toggle and nav-toggle is checked, display nav as a block */
@@ -131,9 +142,18 @@ nav a:hover {
   content: "";
   display: block;
   height: 5px;
-  background: rgb(226, 101, 42);
+  background: var(--orange-accent);
   position: absolute;
-  top: 1;
+  left: 0;
+  right: 0;
+}
+
+.h2-underline-teal::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: var(--teal-accent);
+  position: absolute;
   left: 0;
   right: 0;
 }
@@ -148,7 +168,6 @@ nav a:hover {
     /* grid with 4 columns */
     grid-template-columns: 1fr auto minmax(200px, 3fr) 1fr;
     grid-template-rows: auto;
-    background-color: var(--dark-background);
   }
 
   .logo {
@@ -183,7 +202,7 @@ nav a:hover {
     content: "";
     display: block;
     height: 5px;
-    background: rgb(226, 101, 42);
+    background: var(--orange-accent);
     position: absolute;
     top: -0.5rem;
     left: 0;

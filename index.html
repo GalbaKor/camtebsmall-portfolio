@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CamTebSmall</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/Logo2022.png" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="dark-bg-colour">
+  <body>
     <!-- Navigation Bar -->
     <!-- <nav class="bg-black text-white p-4">
 
@@ -73,11 +81,11 @@
     </header>
 
     <main class="w-full pt-32">
-      <section id="work" class="py-64">
+      <section id="work" class="pt-64 pb-32">
         <!-- P1 Simpy Sleep -->
         <article class="max-w-screen-lg m-auto">
           <div
-            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pr-1 lg:border-r-4 border-stone-50"
+            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pr-1 lg:border-r-4 teal-accent-border"
           >
             <a href="./pages/project-1.html" class="hidden lg:block"
               ><image
@@ -103,7 +111,7 @@
         <!-- P2 Digital Trails -->
         <article class="max-w-screen-lg m-auto py-20">
           <div
-            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pl-1 lg:border-l-4 border-stone-50"
+            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pl-1 lg:border-l-4 orange-accent-border"
           >
             <div class="text-white p-6 m-auto text-right">
               <h2 class="text-2xl">Frome Valley Digital Trails</h2>
@@ -129,7 +137,7 @@
         <!-- P3 Virtual Museum Webapp -->
         <article class="max-w-screen-lg m-auto pb-20">
           <div
-            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pr-1 lg:border-r-4 border-stone-50"
+            class="w-full grid grid-cols-1 lg:grid-cols-2 lg:pr-1 lg:border-r-4 teal-accent-border"
           >
             <a href="./pages/project-1.html" class="hidden lg:block relative"
               ><image
@@ -164,7 +172,7 @@
 
       <section
         id="about-me"
-        class="max-w-screen-lg mx-auto lg:grid lg:grid-cols-12 p-6"
+        class="max-w-screen-lg mx-auto lg:grid lg:grid-cols-12 p-6 pt-32"
       >
         <!-- <h3 class="text-white text-2xl row-start-1 col-start-2 col-end-3">
           About Me:
@@ -197,23 +205,6 @@
             prototyping solutions.
           </p>
         </article>
-        <!-- <h1 class="text-white text-4xl row-start-1 col-start-2 col-end-3">
-          About Me:
-        </h1>
-        <h2
-          class="text-white text-2xl row-start-2 col-start-2 col-end-3 relative"
-        >
-          UX/UI and Front-end web designer living in Bristol, UK.
-        </h2>
-        <p class="row-start-3 col-start-1 col-end-3 pt-20 text-white">
-          With a background in philosophy and literature and a love for
-          technology, I am a creative and critical thinker who enjoys building
-          interactive, informative and emotive digital experiences to improve
-          the lives of others. I am confident researching and writing for
-          projects while persevering through problems by learning new techniques
-          and solutions.
-        </p> -->
-
         <image
           src="./assets/images/me.jpg"
           class="row-start-1 lg:col-start-10 lg:col-end-13 lg:py-10"
@@ -221,56 +212,35 @@
       </section>
     </main>
 
-    <!-- Projects -->
-    <!-- <main class="w-full bg-black pt-72">
-      <article class="max-w-screen-lg m-auto">
-        <div class="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-          <section class="relative text-center m-4">
-            <a href="./pages/project-1.html"
-              ><image
-                src="./assets/images/p1-prototype2.png"
-                class="w-full"
-              ></image
-            ></a>
-            <p
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              Project 1
-            </p>
-          </section>
-          <section class="relative text-center m-4">
-            <a href="./pages/project-2.html"
-              ><image
-                src="https://via.placeholder.com/300"
-                class="w-full"
-              ></image
-            ></a>
-            <p
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              Project 2
-            </p>
-          </section>
-          <section class="relative text-center m-4">
-            <a href="./pages/project-3.html"
-              ><image
-                src="https://via.placeholder.com/300"
-                class="w-full"
-              ></image
-            ></a>
-            <p
-              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            >
-              Project 3
-            </p>
-          </section>
-        </div>
-      </article>
-    </main> -->
-
-    <footer class="w-full dark-bg-colour text-white text-center py-4 pt-32">
-      <section class="max-w-screen-lg mx-auto">
-        <p id="copyright-notice"></p>
+    <!-- Footer -->
+    <footer
+      id="contact-me"
+      class="w-full dark-bg-colour text-white text-center py-4 pt-32"
+    >
+      <section class="max-w-screen-lg mx-auto grid md:grid-cols-3">
+        <section
+          class="teal-accent-text md:col-start-3 md:row-start-1 grid grid-cols-3 items-center py-2"
+        >
+          <a href="#"
+            ><i class="fa-brands fa-twitter col-start-1 text-2xl"></i
+          ></a>
+          <a href="https://github.com/GalbaKor"
+            ><i class="fa-brands fa-github col-start-2 text-2xl"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/cameron-tebbenham-small/"
+            ><i class="fa-brands fa-linkedin col-start-3 text-2xl"></i
+          ></a>
+        </section>
+        <p class="teal-accent-text py-2 md:col-start-1 md:row-start-1">
+          cameron.tebbenham@outlook.com
+        </p>
+        <!-- <a href="mailto:cameron.tebbenham@outlook.com"
+          >cameron.tebbenham@outlook.com</a
+        > -->
+        <p
+          class="orange-accent-text py-2 md:col-start-2 md:row-start-1"
+          id="copyright-notice"
+        ></p>
       </section>
     </footer>
   </body>
