@@ -116,7 +116,7 @@ nav a:hover {
   grid-row: 2;
   grid-column: 3/4;
 }
-.headings-container h2::after {
+/* .headings-container h2::after {
   content: "";
   display: block;
   height: 5px;
@@ -125,7 +125,7 @@ nav a:hover {
   top: 1;
   left: 0;
   right: 0;
-}
+} */
 
 .h2-underline::after {
   content: "";
@@ -137,6 +137,7 @@ nav a:hover {
   left: 0;
   right: 0;
 }
+
 @media screen and (min-width: 768px) {
   .nav-toggle-label {
     display: none;
