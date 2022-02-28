@@ -8,25 +8,39 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/Logo2022.png" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
+    <!-- Navigation -->
     <section class="fixed z-50 w-full">
       <div class="max-w-screen-lg mx-auto nav-container">
-        <a href="../index.html"
-          ><image class="w-20 m-auto logo" src="../assets/images/Logo2022.png"
-        /></a>
+        <div class="w-20 m-auto py-4">
+          <a href="../index.html"
+            ><image
+              class="w-16 logo m-auto"
+              src="../assets/images/Logo2022.png"
+          /></a>
+        </div>
+
         <!-- mobile nav toggle -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
           <ul class="m-0 p-0 list-none">
             <li>
-              <a href="#work">Work</a>
+              <a href="../index.html#work">Work</a>
             </li>
             <li>
-              <a href="#about-me">About</a>
+              <a href="../index.html#about-me">About</a>
             </li>
             <li>
-              <a href="#contact-me">Contact</a>
+              <a href="../index.html#contact-me">Contact</a>
             </li>
           </ul>
         </nav>
@@ -35,153 +49,256 @@
         </label>
       </div>
     </section>
+
+    <!-- Header -->
     <header class="w-full pt-72 px-6">
       <section
-        id="about-me"
-        class="max-w-screen-lg mx-auto lg:grid lg:grid-cols-12 lg:grid-rows-4 p-6"
+        class="max-w-screen-md mx-auto md:grid md:grid-cols-12 md:grid-rows-3 p-6"
       >
         <!-- <h3 class="text-white text-2xl row-start-1 col-start-2 col-end-3">
           About Me:
         </h3> -->
         <article
-          class="row-start-1 row-end-4 lg:col-start-1 lg:col-end-12 lg:grid lg:grid-cols-12"
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
         >
           <h3
-            class="text-white text-2xl row-start-1 lg:col-start-1 lg:col-end-12"
+            class="text-white text-2xl row-start-1 md:col-start-1 md:col-end-10"
           >
             October 2021 - May 2022
           </h3>
           <h1
-            class="text-white text-4xl row-start-2 lg:col-start-1 lg:col-end-12"
+            class="text-white text-4xl row-start-2 md:col-start-1 md:col-end-10"
           >
             Virtual Museum Webapp - in progress,
           </h1>
           <h2
-            class="text-white text-2xl row-start-3 lg:col-start-1 lg:col-end-5 relative h2-underline"
+            class="text-white text-2xl row-start-3 md:col-start-1 md:col-end-10 relative h2-underline"
           >
             UX/UI and Front-End Web Developer
           </h2>
 
           <section
-            class="row-start-4 lg:col-start-1 lg:col-end-8 pt-10 text-white"
+            class="row-start-4 row-end-5 md:col-start-1 md:col-end-8 pt-10 text-white"
           >
             <h2 class="text-xl relative h2-underline-teal">Overview</h2>
             <p class="py-4">
-              During 2021 I was tasked with identifying one key health issue for
-              a population group, conducting user research and designing a
-              mobile application prototype.
-              <br />
-              Initial ideation and brainstorming was performed in a group before
-              splitting to develop a series of individual prototypes.
+              For my final year comprehensive creative technologies project, I
+              decided to focus on the digitisation of museums. This meant
+              exploring how contemporary web libraries and frameworks can be
+              used to elevate interaction and using them to bring a distilled
+              museum experience to a potentially wider audience.
             </p>
           </section>
+          <div
+            class="row-start-4 md:col-start-9 md:col-end-13 text-white pt-10"
+          >
+            <h2 class="text-xl relative h2-underline-teal">Process</h2>
+            <ul class="py-4">
+              <li>Ideation and Project Proposal</li>
+              <li>Literature Review</li>
+              <li>Prototype Demo</li>
+              <li>Coming soon...</li>
+            </ul>
+            <h2 class="text-xl relative h2-underline-teal">Tools</h2>
+            <ul class="py-4">
+              <li>Figma</li>
+              <li>HTML, CSS, JS</li>
+              <li>React JS</li>
+              <li>Three JS</li>
+              <li>React Three Fiber</li>
+              <li>Github (version control)</li>
+            </ul>
+          </div>
+          <image
+            src="../assets/images/p3-intro.png"
+            alt="Frome Valley Digital Trails landing page"
+            class="row-start-5 row-end-6 md:col-start-1 md:col-end-13 m-auto py-4"
+          />
         </article>
-        <image
-          src="../assets/images/p3-proposal.png"
-          alt="Frome Valley Digital Trails landing page"
-          class="row-start-1 row-end-5 col-start-9 col-end-13 max-h-96 m-auto"
-        />
       </section>
     </header>
 
-    <h2>Overview</h2>
-    <p>
-      For my final year comprehensive creative technologies project, I decided
-      to focus on the digitisation of museums. This meant exploring how
-      contemporary web libraries and frameworks can be used to elevate
-      interaction and using them to bring a distilled museum experience to a
-      potentially wider audience.
-    </p>
+    <!-- Main Content -->
+    <main class="w-full px-6">
+      <!-- Ideation -->
+      <section
+        class="max-w-screen-lg mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
+        >
+          <section class="row-start-4 md:col-start-1 md:col-end-13 text-white">
+            <h2 class="text-xl relative h2-underline-teal">
+              Ideation and Project Proposal
+            </h2>
+            <p class="py-4 md:pr-2">
+              During the ideation stage, we considered; the form the final
+              product should take - a dedicated application or webapp, the
+              target audience, the amount of information to be displayed and the
+              visual theme of the project.
+              <br /><br />
+              Additionally, we were presented with a design requirement that the
+              project be developed such that the Frome Valley team could create
+              new routes in the future.
+              <br /><br />
+              Thus the initial stages consisted of gathering information from
+              the client themselves and refining their idea into a consolidated
+              design brief outlining the must haves and should haves for the
+              webapp.
+            </p>
+          </section>
+        </article>
+        <!-- <iframe
+          src="../assets/pdfs/Frome Valley Digital Trails Brief.pdf#toolbar=0"
+          frameborder="0"
+          width="100%"
+          height="400px"
+          class="row-start-1 row-end-3 col-start-8 col-end-13 max-h-80 m-auto"
+        ></iframe> -->
+      </section>
 
-    <h2>Main Tools</h2>
-    <ul>
-      <li>Figma</li>
-      <li>HTML, CSS, JS</li>
-      <li>React JS</li>
-      <li>Three JS</li>
-      <li>React Three Fiber</li>
-      <li>Github (version control)</li>
-    </ul>
+      <!-- Ideation and Project Proposal -->
+      <section
+        class="max-w-screen-lg mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
+        >
+          <section class="row-start-1 md:col-start-1 md:col-end-8 text-white">
+            <h2 class="text-xl relative h2-underline-teal">
+              Ideation and Project Proposal
+            </h2>
+            <p class="py-4 md:pr-2">
+              Ideation required extensive research into the current, past and
+              potential future landscape of museums and their relationship with
+              digital tools. During this research I pinpointed specific points
+              of interest and documented my research and analysis.
+              <br /><br />
+              As this was my final year project, I wanted to build upon aspects
+              that I had enjoyed during my time at university - user experience,
+              the concept of interactivity and interaction flow, and front-end
+              web development.
+              <br /><br />
+              Due to this, I decided to push my boundaries and explore
+              contemporary web development tools. I briefly researched into
+              three of the most well known tools (Vue, Angular and React) before
+              ideating on initial plans to implement 3D models into my design.
+              Thus I had a direction and knowledge of the tools required to meet
+              my goals.
+            </p>
+          </section>
+          <image
+            src="../assets/images/p3-proposal.png"
+            alt="The Y Shaped Tree,
+    before and after a sticker is granted to the user"
+            class="row-start-1 md:col-start-8 md:col-end-13 max-h-96 py-4 pl-2 m-auto"
+          />
+        </article>
+      </section>
 
-    <h2>Process</h2>
-    <ul>
-      <li>Ideation and Project Proposal</li>
-      <li>Literature Review</li>
-      <li>Prototype Demo</li>
-      <li>Coming soon...</li>
-    </ul>
+      <!-- Literature Review -->
+      <section
+        class="max-w-screen-lg mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
+        >
+          <section class="row-start-1 md:col-start-1 md:col-end-13 text-white">
+            <h2 class="text-xl relative h2-underline-teal">
+              Literature Review
+            </h2>
+            <p class="py-4 md:pr-2">
+              Following feedback from my academic tutor for the project, I
+              deepened my already extensive research by augmenting it with a
+              period of User Research as follows:
+            </p>
+            <ol class="list-disc pl-4">
+              <li>Academic research</li>
+              <li>SWOT analysis of competitors</li>
+              <li>Develop interview questions</li>
+              <li>Interview potential users</li>
+              <li>Data Matrix + Thematic Analysis</li>
+            </ol>
+            <p class="py-4 md:pr-2">
+              Using my interview data, I constructed a data matrix and via
+              thematic analysis, extracted a series of major and minor themes.
+              These would form the basis of my must have and should have
+              features and concepts for the remainder of the project.
+            </p>
+          </section>
+          <image
+            src="../assets/images/p3-thematicanalysis.png"
+            alt="The Y Shaped Tree,
+    before and after a sticker is granted to the user"
+            class="row-start-2 md:col-start-1 md:col-end-13 max-h-96 py-4 pl-2 m-auto"
+          />
+        </article>
+      </section>
 
-    <h2>Ideation and Project Proposal</h2>
-    <p>
-      Ideation required extensive research into the current, past and potential
-      future landscape of museums and their relationship with digital tools.
-      During this research I pinpointed specific points of interest and
-      documented my research and analysis.
-      <br />
-      As this was my final year project, I wanted to build upon aspects that I
-      had enjoyed during my time at university - user experience, the concept of
-      interactivity and interaction flow, and front-end web development.
-      <br />
-      Due to this, I decided to push my boundaries and explore contemporary web
-      development tools. I briefly researched into three of the most well known
-      tools (Vue, Angular and React) before ideating on initial plans to
-      implement 3D models into my design. Thus I had a direction and knowledge
-      of the tools required to meet my goals.
-    </p>
-    <image
-      src="../assets/images/p3-proposal.png"
-      alt="The first page of my written proposal including must have requirements for the final project"
-    />
+      <!-- Demo -->
+      <section
+        class="max-w-screen-lg mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article
+          class="row-start-1 row-end-4 md:col-start-1 md:col-end-13 md:grid md:grid-cols-12"
+        >
+          <section class="row-start-1 md:col-start-1 md:col-end-13 text-white">
+            <h2 class="text-xl relative h2-underline-teal">Demo</h2>
+            <p class="py-4 md:pr-2">
+              Part way through the design and development process, I was
+              required to submit a demo of my project, showcasing one of the
+              major functional components. For this, I created a video showing
+              off how I had used React, Three JS and React Three Fiber to
+              position a series of interactable 3D models in an "exhibit" scene.
+            </p>
+            <iframe
+              class="w-full lg:mx-auto p-4 text-sm rounded-3xl"
+              height="500"
+              src="https://www.youtube.com/embed/5V42BMrefBk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+        </article>
+      </section>
 
-    <h2>Literature Review</h2>
-    <p>
-      Following feedback from my academic tutor for the project, I deepened my
-      already extensive research by augmenting it with a period of User Research
-      as follows:
-    </p>
-    <ol>
-      <li>Academic research</li>
-      <li>SWOT analysis of competitors</li>
-      <li>Develop interview questions</li>
-      <li>Interview potential users</li>
-      <li>Data Matrix + Thematic Analysis</li>
-    </ol>
-    <image
-      src="../assets/images/p3-thematicanalysis.png"
-      alt="Major and minor themes derived from interview transcriptions"
-    />
-    <p>
-      I also used this time to develop my understanding of how I might
-      personally evaluate my project during the design and development stages. I
-      discovered the MUSETECH framework, an extremely useful collection of 121
-      evaluation criteria for digital technologies in museums, and incorporated
-      it into my development process.
-    </p>
-
-    <h2>Demo</h2>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/5V42BMrefBk"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+      <!-- Conclusion -->
+      <section
+        class="max-w-screen-md mx-auto md:grid md:grid-cols-12 md:grid-rows-2 p-6"
+      >
+        <article class="row-start-1 row-end-4 md:col-start-1 md:col-end-13">
+          <section class="text-white">
+            <h2 class="text-xl relative h2-underline-teal">Conclusion</h2>
+            <p class="py-4 md:pr-2">
+              This project isn't finished yet, so you'll have to wait for my
+              conclusion!
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="w-full dark-bg-colour text-white text-center py-4 pt-32">
+    <footer class="w-full text-center py-4 pt-32">
       <section class="max-w-screen-lg mx-auto grid md:grid-cols-3">
         <section
           class="teal-accent-text md:col-start-3 md:row-start-1 grid grid-cols-3 items-center py-2"
         >
-          <a href="#"
+          <a href="#" target="_blank" class="interactHover"
             ><i class="fa-brands fa-twitter col-start-1 text-2xl"></i
           ></a>
-          <a href="#"
+          <a
+            href="https://github.com/GalbaKor"
+            target="_blank"
+            class="interactHover"
             ><i class="fa-brands fa-github col-start-2 text-2xl"></i
           ></a>
-          <a href="#"
+          <a
+            href="https://www.linkedin.com/in/cameron-tebbenham-small/"
+            target="_blank"
+            class="interactHover"
             ><i class="fa-brands fa-linkedin col-start-3 text-2xl"></i
           ></a>
         </section>
@@ -191,11 +308,25 @@
         <!-- <a href="mailto:cameron.tebbenham@outlook.com"
           >cameron.tebbenham@outlook.com</a
         > -->
-        <p
-          class="orange-accent-text py-2 md:col-start-2 md:row-start-1"
-          id="copyright-notice"
-        ></p>
+        <section class="teal-accent-text py-2 items-center text-center">
+          <p id="copyright-notice">
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </section>
       </section>
     </footer>
   </body>
+
+  <!-- Copyright updating script -->
+  <script type="text/javascript">
+    var date = new Date();
+    var copyright = document.getElementById("copyright-notice");
+    // copyright.textContent += "Copyright CamTebSmall " + date.getFullYear();
+
+    var copyrightText = document.createTextNode(
+      "Copyright CamTebSmall " + date.getFullYear()
+    );
+
+    copyright.appendChild(copyrightText);
+  </script>
 </html>

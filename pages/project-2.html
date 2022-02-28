@@ -21,9 +21,12 @@
     <!-- Navigation -->
     <section class="fixed z-50 w-full">
       <div class="max-w-screen-lg mx-auto nav-container">
-        <a href="../index.html"
-          ><image class="w-20 m-auto logo" src="../assets/images/Logo2022.png"
-        /></a>
+        <div class="w-20 m-auto py-4">
+          <a href="../index.html"
+            ><image class="w-16 logo m-auto" src="../assets/images/Logo2022.png"
+          /></a>
+        </div>
+
         <!-- mobile nav toggle -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <nav>
@@ -229,18 +232,24 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full dark-bg-colour text-white text-center py-4 pt-32">
+    <footer class="w-full text-center py-4 pt-32">
       <section class="max-w-screen-lg mx-auto grid md:grid-cols-3">
         <section
           class="teal-accent-text md:col-start-3 md:row-start-1 grid grid-cols-3 items-center py-2"
         >
-          <a href="#" target="_blank"
+          <a href="#" target="_blank" class="interactHover"
             ><i class="fa-brands fa-twitter col-start-1 text-2xl"></i
           ></a>
-          <a href="https://github.com/GalbaKor" target="_blank"
+          <a
+            href="https://github.com/GalbaKor"
+            target="_blank"
+            class="interactHover"
             ><i class="fa-brands fa-github col-start-2 text-2xl"></i
           ></a>
-          <a href="https://www.linkedin.com/in/cameron-tebbenham-small/" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/cameron-tebbenham-small/"
+            target="_blank"
+            class="interactHover"
             ><i class="fa-brands fa-linkedin col-start-3 text-2xl"></i
           ></a>
         </section>
@@ -250,10 +259,11 @@
         <!-- <a href="mailto:cameron.tebbenham@outlook.com"
           >cameron.tebbenham@outlook.com</a
         > -->
-        <p
-          class="orange-accent-text py-2 md:col-start-2 md:row-start-1"
-          id="copyright-notice"
-        ></p>
+        <section class="teal-accent-text py-2 items-center text-center">
+          <p id="copyright-notice">
+            <i class="fa-regular fa-copyright"></i>
+          </p>
+        </section>
       </section>
     </footer>
   </body>
@@ -262,6 +272,12 @@
   <script type="text/javascript">
     var date = new Date();
     var copyright = document.getElementById("copyright-notice");
-    copyright.textContent += "Copyright CamTebSmall " + date.getFullYear();
+    // copyright.textContent += "Copyright CamTebSmall " + date.getFullYear();
+
+    var copyrightText = document.createTextNode(
+      "Copyright CamTebSmall " + date.getFullYear()
+    );
+
+    copyright.appendChild(copyrightText);
   </script>
 </html>
