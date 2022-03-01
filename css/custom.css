@@ -4,10 +4,11 @@
   --teal-accent: #32aaac;
   --orange-accent: #e2652a;
 }
-
+html {
+  overflow: scroll;
+}
 body {
   background: var(--dark-background);
-  overflow: auto;
 }
 .dark-bg-colour {
   background-color: var(--dark-background);
