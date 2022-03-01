@@ -581,6 +581,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.block {
+  display: block;
+}
+
 .table {
   display: table;
 }
@@ -615,6 +619,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-16 {
   width: 4rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-screen-lg {
@@ -735,6 +755,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -773,9 +801,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
 }
 
 @media (min-width: 768px) {
@@ -829,6 +866,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:row-start-1 {
     grid-row-start: 1;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:grid {

@@ -166,6 +166,7 @@ nav a:hover {
 .imageInteractHover:hover {
   transform: scale(1.05);
   transition: transform 400ms ease-in-out;
+  opacity: 50%;
 }
 
 @media screen and (min-width: 768px) {
