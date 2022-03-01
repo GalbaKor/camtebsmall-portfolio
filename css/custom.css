@@ -4,12 +4,14 @@
   --teal-accent: #32aaac;
   --orange-accent: #e2652a;
 }
+::-webkit-scrollbar {
+  all: unset;
+}
 html {
   scroll-behavior: smooth;
 }
 body {
   background: var(--dark-background);
-  overflow-y: scroll;
 }
 .dark-bg-colour {
   background-color: var(--dark-background);
