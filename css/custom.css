@@ -4,9 +4,7 @@
   --teal-accent: #32aaac;
   --orange-accent: #e2652a;
 }
-::-webkit-scrollbar {
-  all: unset;
-}
+
 html {
   scroll-behavior: smooth;
 }
