@@ -6,6 +6,7 @@
 }
 body {
   background: var(--dark-background);
+  overflow: scroll;
 }
 .dark-bg-colour {
   background-color: var(--dark-background);
