@@ -4,6 +4,9 @@
   --teal-accent: #32aaac;
   --orange-accent: #e2652a;
 }
+::-webkit-scrollbar {
+  z-index: 99999;
+}
 body {
   background: var(--dark-background);
   overflow: scroll;
