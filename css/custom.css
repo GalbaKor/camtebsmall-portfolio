@@ -38,6 +38,10 @@ body {
   border-color: var(--orange-accent);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Custom navigation bar styling */
 nav {
   position: absolute;
