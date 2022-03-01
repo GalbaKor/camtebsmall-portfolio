@@ -4,9 +4,6 @@
   --teal-accent: #32aaac;
   --orange-accent: #e2652a;
 }
-html {
-  overflow: scroll;
-}
 body {
   background: var(--dark-background);
 }
@@ -39,10 +36,6 @@ body {
 }
 .orange-accent-border {
   border-color: var(--orange-accent);
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* Custom navigation bar styling */
