@@ -4,7 +4,9 @@
   --teal-accent: #32aaac;
   --orange-accent: #e2652a;
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+::webkit-scrollbar-track,
+::webkit-scrollbar-thumb {
   z-index: 99999;
 }
 body {
