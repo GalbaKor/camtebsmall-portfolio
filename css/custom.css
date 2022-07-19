@@ -227,3 +227,11 @@ nav a:hover {
     transform: scale(1, 1);
   }
 }
+
+.teal-custom {
+  color: var(--teal-accent);
+}
+
+.orange-custom {
+  color: var(--orange-accent);
+}
